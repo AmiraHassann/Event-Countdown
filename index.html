@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+    <main class="shell">
+        <header class="hero">
+            <p class="eyebrow">Live countdown</p>
+            <h1>Design Futures 2026</h1>
+            <p class="lede">Join product minds and makers for an evening of talks, demos, and networking. We start on time, so keep an eye on the clock.</p>
+        </header>
+
+        <section class="card">
+            <div class="card-head">
+                <div>
+                    <p class="label">Event date</p>
+                    <p class="value" data-event-date>Saturday, February 15, 2026 · 5:00 PM</p>
+                </div>
+                <a class="ghost-btn" href="#details" aria-label="Add to calendar">
+                    Add to calendar
+                </a>
+            </div>
+
+            <div class="countdown" aria-live="polite">
+                <div class="block">
+                    <div class="digit" data-unit="days">00</div>
+                    <span class="unit">Days</span>
+                </div>
+                <div class="block">
+                    <div class="digit" data-unit="hours">00</div>
+                    <span class="unit">Hours</span>
+                </div>
+                <div class="block">
+                    <div class="digit" data-unit="minutes">00</div>
+                    <span class="unit">Minutes</span>
+                </div>
+                <div class="block">
+                    <div class="digit" data-unit="seconds">00</div>
+                    <span class="unit">Seconds</span>
+                </div>
+            </div>
+
+            <p class="status" data-status>Counting down…</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -33,7 +33,7 @@ function setValue(unit, value) {
 
 	el.textContent = formatted;
 	el.classList.remove('tick');
-	void el.offsetWidth; // force reflow so animation retriggers
+	void el.offsetWidth; 
 	el.classList.add('tick');
 }
 

@@ -1,4 +1,4 @@
-const targetDate = new Date('2026-02-15T17:00:00');
+const targetDate = new Date('2026-12-30T31:00:00');
 
 const units = ['days', 'hours', 'minutes', 'seconds'];
 const elements = Object.fromEntries(
